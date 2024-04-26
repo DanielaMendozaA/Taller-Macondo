@@ -5,7 +5,7 @@ const main_5 = function(salary){
     
     alert("---Case 5---")
     alert("Now, You need to play a game with the taxi driver to define if you will pay for the service")
-    alert("¡¡¡¡Welcome to the game of stone paper or scissors!!!!")
+    alert("¡¡¡¡Welcome to the game of rock paper or scissors!!!!")
     alert(`The currently salary is: ${salary} \nRemember if you lost, you have to pay to the taxy driver $300.000`)
 
     let numAlHildebrando
@@ -14,10 +14,10 @@ const main_5 = function(salary){
     do{
         let choose
         do{
-            choose = Number(prompt("Hildebrando, please enter the opcion that you want to choose\n1.Stone\n2.Paper\n3.Scissors"))
+            choose = Number(prompt("Hildebrando, please enter the opcion that you want to choose\n1.rock\n2.Paper\n3.Scissors"))
             switch(choose){
                 case 1:
-                    numAlHildebrando = "stone"
+                    numAlHildebrando = "rock"
                     break
                 case 2:
                     numAlHildebrando = "paper"
@@ -34,14 +34,14 @@ const main_5 = function(salary){
 
      
         if(numeAlTaxi === 1){
-            numeAlTaxi = "stone"
+            numeAlTaxi = "rock"
         }else if(numeAlTaxi === 2){
             numeAlTaxi = "paper"
         }else{
             numeAlTaxi = "scissors"
         }
 
-        if((numAlHildebrando === "stone" && numeAlTaxi === "paper") || (numAlHildebrando === "scissors" && numeAlTaxi === "stone") || (numAlHildebrando === "paper" && numeAlTaxi === "scissors")){
+        if((numAlHildebrando === "rock" && numeAlTaxi === "paper") || (numAlHildebrando === "scissors" && numeAlTaxi === "rock") || (numAlHildebrando === "paper" && numeAlTaxi === "scissors")){
             alert(`The taxi driver won\nHildebrando got ${numAlHildebrando}\nTaxi driver got ${numeAlTaxi}`)
             salary -= 300000
         }else{
