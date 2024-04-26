@@ -14,7 +14,7 @@ const main_5 = function(salary){
     do{
         let choose
         do{
-            choose = Number(prompt("Hildebrando, please enter the opcion that you want to choose\n1.rock\n2.Paper\n3.Scissors"))
+            choose = Number(prompt("Hildebrando, please enter the opcion that you want to choose\n1.Rock\n2.Paper\n3.Scissors"))
             switch(choose){
                 case 1:
                     numAlHildebrando = "rock"
